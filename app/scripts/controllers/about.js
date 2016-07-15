@@ -1,17 +1,16 @@
 'use strict';
-
-/**
- * @ngdoc function
- * @name ballsApp.controller:AboutCtrl
- * @description
- * # AboutCtrl
- * Controller of the ballsApp
- */
-angular.module('ballsApp')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+// 
+// /**
+//  * @ngdoc function
+//  * @name sonosApp.controller:AboutCtrl
+//  * @description
+//  * # AboutCtrl
+//  * Controller of the sonosApp
+//  */
+//  angular.module('sonosApp')
+//    .controller('MainCtrl', function ($scope, stormService) {
+//      stormService.getStormByLocation().then(function(data){
+//        $scope.tit = data;
+//        console.log(data);
+//      });
+//    });

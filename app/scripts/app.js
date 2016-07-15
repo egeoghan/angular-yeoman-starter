@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name ballsApp
+ * @name sonosApp
  * @description
- * # ballsApp
+ * # sonosApp
  *
  * Main module of the application.
  */
 angular
-  .module('ballsApp', [
+  .module('sonosApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
