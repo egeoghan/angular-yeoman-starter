@@ -19,15 +19,14 @@ angular.module('sonosApp')
 
   }).directive('locationBlock', function(weatherService){
     return {
-      restrict:'A',
-      replace:true,
+      restrict:'E',
       scope:{
         lat: '=lat',
         long: '=long'
       },
       link:function(scope){
         weatherService.getWeatherByLocation(scope.lat, scope.long).then(function(data) {
-          scope.tit = data;
+          scope.locationData = data;
           console.log(data);
         });
       },

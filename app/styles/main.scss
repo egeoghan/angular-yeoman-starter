@@ -24,8 +24,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -33,6 +31,15 @@ body {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
+  }
+}
+
+.container {
+  .location-block {
+    width: 100%;
+    background: #e7e7e7;
+    margin: 10px 0;
+    display: inline-block;
   }
 }
 
@@ -82,7 +89,7 @@ body {
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {

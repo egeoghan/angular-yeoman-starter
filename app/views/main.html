@@ -1,17 +1,4 @@
 <div>
-  {{tit.hourly.summary}}
-  {{tit.hourly.icon}}
-  <div>
-    Show Wind Bearing: <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide"><br/>
-    <div class="check-element animate-show" ng-show="checked">
-      <span class={{hour.windBearing}}></span>
-        <div ng-repeat="hour in tit.hourly.data">
-          <!-- {{hour.apparentTemperature}} -->
-          {{hour.windBearing}}
-        </div>
-    </div>
-    <div location-block ng-repeat="location in locations" data-lat="location.lat" data-long="location.long">
-    </div>
-  </div>
-
+  <location-block ng-repeat="location in locations" data-lat="location.lat" data-long="location.long">
+  </location-block>
 </div>
