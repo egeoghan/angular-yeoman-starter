@@ -3,7 +3,7 @@
 describe('Service: sonosService', function () {
 
   // load the service's module
-  beforeEach(module('sonosApp'));
+  beforeEach(module('weatherApp'));
 
   // instantiate service
   var sonosService;

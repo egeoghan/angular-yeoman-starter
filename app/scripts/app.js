@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name sonosApp
+ * @name weatherApp
  * @description
- * # sonosApp
+ * # weatherApp
  *
  * Main module of the application.
  */
 angular
-  .module('sonosApp', [
+  .module('weatherApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

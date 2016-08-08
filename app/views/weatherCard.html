@@ -1,0 +1,18 @@
+<div class="weather-card" ng-if="card.loaded">
+    <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+  <div class="location-name">
+    <h4>{{card.city}}</h4>
+    <h5>{{card.country}}</h5>
+  </div>
+
+  <div class="date-range">
+    {{card.dateRange.startDate}} to
+    {{card.dateRange.endDate}}
+  </div>
+
+  <div class="bottom-stuff">
+  <day-info data-day="day" ng-repeat="day in card.weatherData.daily"> </day-info>
+  </div>
+
+
+</div>

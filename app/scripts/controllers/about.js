@@ -1,16 +1,16 @@
 'use strict';
-// 
+//
 // /**
 //  * @ngdoc function
-//  * @name sonosApp.controller:AboutCtrl
+//  * @name weatherApp.controller:AboutCtrl
 //  * @description
 //  * # AboutCtrl
-//  * Controller of the sonosApp
+//  * Controller of the weatherApp
 //  */
-//  angular.module('sonosApp')
-//    .controller('MainCtrl', function ($scope, stormService) {
-//      stormService.getStormByLocation().then(function(data){
-//        $scope.tit = data;
-//        console.log(data);
-//      });
-//    });
+angular.module('selectLocation', [])
+   .controller('AboutCtrl', ['$scope', function($scope) {
+     $scope.example = {
+       text: 'guest',
+       word: /^\s*\w*\s*$/
+     };
+   }]);
