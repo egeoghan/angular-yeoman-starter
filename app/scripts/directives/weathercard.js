@@ -16,13 +16,11 @@ angular.module('weatherApp')
         time: moment.unix(currentDay.time).utcOffset(data.offset).format('M/D'),
         icon: currentDay.icon,
         temperatureMax: currentDay.apparentTemperatureMax,
-        summary: currentDay.summary,
-        iconPic: 'images/partly-cloudy.jpg'
+        summary: currentDay.summary
       };
 
       $scope.card.weatherData.daily.push(dataToPush);
 
-      // WE got nuther dai! hoorai
       $scope.card.daysReceived++;
       if($scope.card.daysReceived === $scope.card.numberOfDays){
         $scope.card.weatherData.daily.sort(function(a,b) {
@@ -43,7 +41,7 @@ angular.module('weatherApp')
         var dayString = currentDate.format('X');
         weatherService.getWeatherByLocation($scope.card.latitude, $scope.card.longitude, dayString)
         .then(getWeatherHandler);
-
+        console.log(dayString);
         currentDate = currentDate.add(1, 'day');
       }
     }

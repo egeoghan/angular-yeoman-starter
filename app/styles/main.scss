@@ -58,11 +58,11 @@ body {
       display: inline-block;
 
       .day-info{
-        margin: 10px 30px;
-        width: 30%;
+        margin: 20px 3%;
+        width: 27%;
         // border-right: 1px solid #777;
         float: left;
-        height: 100px;
+        height: auto;
         padding: 10px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         position: relative;
@@ -82,22 +82,20 @@ body {
         .day-summary {
           margin-top: 2px;
           font-weight: normal;
+          float: right;
         }
         .half {
           width: 48%;
+
+          canvas {
+            display: block;
+            margin: 0 auto;
+          }
         }
-        canvas {
-         display: block;
-         float: left;
-         margin-left: 8px;
-         margin-top: 8px;
-       }
-       figure {
-	      margin: 5em auto;
-	      width: 350px;
-	      height: 150px;
-        background-color: #000;
-      }
+
+        .temperatureMax {
+          float: right;
+        }
       }
     }
   }
@@ -137,7 +135,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 960px;
   }
 
   /* Remove the padding we set earlier */

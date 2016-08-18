@@ -12,7 +12,7 @@ angular.module('weatherApp')
     var apikey = '61e98aabd70df5020002c4b66c53e8ac';
     var host = 'https://api.forecast.io/forecast/';
     return {
-      
+
       getWeatherByLocation: function(lat, long, day) {
         var myData = $q.defer();
         $http.get(host + apikey + '/' + lat + ',' + long + ',' + day)

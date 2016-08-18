@@ -38,8 +38,8 @@
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
+              <li class="active"><a href="#/">Weather</a></li>
+              <li><a ng-href="#/itinerary'">Itinerary</a></li>
               <li><a ng-href="#/">Contact</a></li>
             </ul>
           </div>
@@ -87,46 +87,13 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/itinerary.js"></script>
         <script src="scripts/services/weatherservice.js"></script>
         <script src="scripts/directives/weathercard.js"></script>
         <script src="scripts/directives/dayinfo.js"></script>
         <script src="scripts/vendor/skycons.js"></script>
         <script src="scripts/services/iconservice.js"></script>
+        <script src="scripts/services/locationservice.js"></script>
         <!-- endbuild -->
-        <figure class="icons">
-      <canvas id="clear-day" width="64" height="64"></canvas>
-      <canvas id="clear-night" width="64" height="64"></canvas>
-	<canvas id="partly-cloudy-day" width="64" height="64"></canvas>
-	<canvas id="partly-cloudy-night" width="64" height="64"></canvas>
-	<canvas id="cloudy" width="64" height="64"></canvas>
-	<canvas id="rain" width="64" height="64"></canvas>
-	<canvas id="sleet" width="64" height="64"></canvas>
-	<canvas id="snow" width="64" height="64"></canvas>
-	<canvas id="wind" width="64" height="64"></canvas>
-      <canvas id="fog" width="64" height="64"></canvas>
-      </figure>
-        <script>
-        var icons = new Skycons({"color":"blue"}),
-    list = [
-      "clear-day",
-      "clear-night",
-      "partly-cloudy-day",
-      "partly-cloudy-night",
-      "cloudy",
-      "rain",
-      "sleet",
-      "snow",
-      "wind",
-      "fog"
-     ],
-    i;
-
-for(i = list.length; i--;)
-  icons.set(list[i], list[i]);
-  console.log(icons);
-
-      icons.play();
-      </script>
 </body>
 </html>
